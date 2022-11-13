@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background-image: url('../public/samudai_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.App-logo {
+  width: 200px;
+  height: 200px;
+  animation: spin 2s linear infinite;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
